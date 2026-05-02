@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Quicksand;
+  font-style: normal;
+  src:
+    url("./assets/fonts/Quicksand-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Quicksand-Regular.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: Quicksand;
+  margin: 0;
+}
