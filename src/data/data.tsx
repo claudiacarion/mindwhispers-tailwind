@@ -1,4 +1,4 @@
-import type { QuoteType } from '../types/Affirmation';
+import type { QuoteType } from '../types/Quote';
 
 export const GetQuote = async ():Promise<QuoteType> => {
   const response = await fetch('https://dummyjson.com/quotes/random')
