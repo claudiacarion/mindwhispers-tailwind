@@ -1,8 +1,12 @@
-import type { QuoteType } from '../types/Quote';
-
-export const GetQuote = async ():Promise<QuoteType> => {
-  const response = await fetch('https://api.adviceslip.com/advice')
-  const data = response.json();
-  
-  return data;
+type QuoteType = {
+  slip: {
+    advice: string
+  }
 }
+
+export const GetQuote = async (): Promise<string> => {
+  const response = await fetch('https://api.adviceslip.com/advice');
+  const data: QuoteType = await response.json();
+  
+  return data.slip.advice;
+};
