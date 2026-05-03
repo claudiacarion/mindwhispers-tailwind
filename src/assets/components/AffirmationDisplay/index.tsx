@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { GetAffirmation } from '../../../data/data'
-import type { Affirmation } from '../../../types';
+import type { Affirmation } from '../../../types/Affirmation';
 
 const AffirmationDisplay = () => {
   const [affirmation, setAffirmation] = useState<Affirmation>();
