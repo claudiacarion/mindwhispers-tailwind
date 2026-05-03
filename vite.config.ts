@@ -1,5 +1,5 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
@@ -7,11 +7,11 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      "/api/affirmation": {
-        target: "https://www.affirmations.dev",
+      '/api': {
+        target: 'https://www.affirmations.dev',
         changeOrigin: true,
-        rewrite: () => "/",
+        rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },
-});
+})
