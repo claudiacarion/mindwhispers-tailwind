@@ -1,3 +1,5 @@
 export type QuoteType = {
-  quote: string
+  slip: {
+    advice: string
+  }
 }
