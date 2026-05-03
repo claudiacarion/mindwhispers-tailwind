@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { GetAffirmation } from '../../../data/data'
-import type { Affirmation } from '../../../types/Affirmation';
+import type { AffirmationType } from '../../../types/Affirmation';
 
 const AffirmationDisplay = () => {
-  const [affirmation, setAffirmation] = useState<Affirmation>();
+  const [affirmation, setAffirmation] = useState<AffirmationType>();
 
   const handleClick = async () => {
     const response = await GetAffirmation();
