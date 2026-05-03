@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { GetQuote } from '../../../data/data'
-import type { QuoteType } from '../../../types/Quote';
+import { GetQuote } from '../../data/data'
+import type { QuoteType } from '../../types/Quote';
 
 const QuoteDisplay = () => {
   const [quote, setQuote] = useState<QuoteType>();

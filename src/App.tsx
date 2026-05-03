@@ -1,7 +1,7 @@
 import './App.css'
-import Header from './assets/components/Header'
-import QuoteDisplay from './assets/components/QuoteDisplay'
-import Footer from './assets/components/Footer'
+import Header from './components/Header'
+import QuoteDisplay from './components/QuoteDisplay'
+import Footer from './components/Footer'
 
 function App() {
 
