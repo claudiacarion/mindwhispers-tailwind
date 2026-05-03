@@ -1,9 +1,8 @@
-import type { AffirmationType } from '../types/Affirmation';
+import type { QuoteType } from '../types/Affirmation';
 
-export const GetAffirmation = async ():Promise<AffirmationType> => {
-  const response = await fetch('/api/?ref=freepublicapis.com')
-    .then(res => res.json());
-  console.log(response);
+export const GetQuote = async ():Promise<QuoteType> => {
+  const response = await fetch('https://dummyjson.com/quotes/random')
+  const data = response.json();
 
-  return response;
+  return data;
 }
