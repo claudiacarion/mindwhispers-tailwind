@@ -17,7 +17,7 @@
 - Deployment on Vercel
 ---
 ## 👀 View Locally
-git clone https://github.com/claudiacarion/mindwhispers-tailwind 
+git clone https://github.com/claudiacarion/mindwhispers-tailwind  
 cd mindwhispers-tailwind 
 cd mindspace-mui  
 npm install  
